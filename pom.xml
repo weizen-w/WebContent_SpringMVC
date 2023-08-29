@@ -13,7 +13,8 @@
     <artifactId>WebContent_SpringMVC</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>WebContent_SpringMVC</name>
-    <description>WebContent_SpringMVC</description>
+    <description>Demo project for Spring Boot (HW)</description>
+
     <properties>
         <java.version>11</java.version>
     </properties>
