@@ -12,8 +12,13 @@ public class GreetingController {
   @RequestMapping("/greeting")
   public String greeting(
       @RequestParam(value = "name", required = false, defaultValue = "World") String name,
+      @RequestParam(value = "group", required = false, defaultValue = "noGroup") String group,
+      @RequestParam(value = "description", required = false, defaultValue = "noDescription")
+          String description,
       @NotNull Model model) {
     model.addAttribute("name", name);
+    model.addAttribute("group", group);
+    model.addAttribute("description", description);
     return "greeting";
   }
 }
